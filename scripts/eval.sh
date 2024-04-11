@@ -1,0 +1,1 @@
+python main.py test --model=EvalPanoGen

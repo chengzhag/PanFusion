@@ -1,0 +1,1 @@
+python main.py test --ckpt_path=last

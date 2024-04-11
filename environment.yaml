@@ -1,0 +1,30 @@
+name: panfusion
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - tqdm
+    - scikit-image
+    - matplotlib
+    - einops
+    - diffusers==0.24.0
+    - transformers
+    - lightning[pytorch-extra]
+    - torch==2.0.1
+    - opencv-python
+    - protobuf
+    - wrapt
+    - numpy
+    - google
+    - googleapis-common-protos
+    - kornia
+    - torchmetrics[image]
+    - xformers
+    - salesforce-lavis
+    - omegaconf
+    - wandb
+    - safetensors
+    - accelerate
+    - shapely
