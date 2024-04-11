@@ -9,7 +9,7 @@ This repo contains data preprocessing, training, testing, evaluation code of our
 
 ## Installation
 
-We use anaconda to manage the environment. You can create the environment by running the following command:
+We use Anaconda to manage the environment. You can create the environment by running the following command:
 
 ```bash
 git clone https://github.com/chengzhag/PanFusion
@@ -201,4 +201,17 @@ Assuming the `WANDB_RUN_ID` is `PANFUSION_ID`, you can test the model by running
 ```bash
 WANDB_RUN_ID=<PANFUSION_LO_ID> python main.py test --data=Matterport3D --model=PanFusion --ckpt_path=last --model.layout_cond=True --data.layout_cond_type=distance_map
 WANDB_RUN_ID=<PANFUSION_LO_ID> python main.py test --data=Matterport3D --model=EvalPanoGen --data.manhattan_layout=True
+```
+
+## Citation
+
+If you find our work helpful, please consider citing:
+
+```bibtex
+@inproceedings{panfusion2024,
+  title={Taming Stable Diffusion for Text to 360◦ Panorama Image Generation},
+  author={Zhang, Cheng and Wu, Qianyi and Cruz Gambardella, Camilo and Huang, Xiaoshui and Phung, Dinh and Ouyang, Wanli and Cai, Jianfei},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024}
+}
 ```
