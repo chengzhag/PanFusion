@@ -3,6 +3,8 @@
 ### Taming Stable Diffusion for Text to 360° Panorama Image Generation
 Cheng Zhang, Qianyi Wu, Camilo Cruz Gambardella, Xiaoshui Huang, Dinh Phung, Wanli Ouyang, Jianfei Cai
 
+### [Project Page](https://chengzhag.github.io/publication/panfusion) | [Paper](https://arxiv.org/abs/2404.07949)
+
 ![teaser](images/teaser.png)
 
 ## Introduction
