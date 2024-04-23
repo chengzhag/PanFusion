@@ -56,6 +56,13 @@ python download_mp.py -o ./Matterport3D --type matterport_skybox_images
 python unzip_skybox.py
 ```
 
+We also use the [splits](https://www.dropbox.com/scl/fi/recc3utsvmkbgc2vjqxur/mp3d_skybox.tar?rlkey=ywlz7zvyu25ovccacmc3iifwe&dl=0) provided by [MVDiffusion](https://github.com/Tangshitao/MVDiffusion). Please download it to `data/Matterport3D` and unzip it with the following command:
+
+```bash
+cd data/Matterport3D
+tar -xvf mp3d_skybox.tar
+```
+
 ### Stitch Matterport3D Skybox
 
 The Matterport3D skybox images are stitched into equirectangular projection images for training. Please run the following command to stitch the images:
