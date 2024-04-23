@@ -22,6 +22,12 @@ conda env create -f environment.yaml
 conda activate panfusion
 ```
 
+If you are having issue with conda solving environment, you can try to create the environment with specific version of the packages:
+
+```bash
+conda env create -f environment_strict.yaml
+```
+
 We use [wandb](https://www.wandb.com/) to log and visualize the training process. You can create an account and login to wandb by running the following command:
 
 ```bash
