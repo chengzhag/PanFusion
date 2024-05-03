@@ -22,17 +22,19 @@ conda env create -f environment.yaml
 conda activate panfusion
 ```
 
-If you are having issue with conda solving environment, you can try to create the environment with specific version of the packages:
+If you are having issue with conda solving environment, or any other issues that might be caused by the version of the packages, you can try to create the environment with specific version of the packages:
 
 ```bash
 conda env create -f environment_strict.yaml
 ```
 
-We use [wandb](https://www.wandb.com/) to log and visualize the training process. You can create an account and login to wandb by running the following command:
+We use [wandb](https://www.wandb.com/) to log and visualize the training process. You can create an account then login to wandb by running the following command:
 
 ```bash
 wandb login
 ```
+
+We provide the wandb [report](https://wandb.ai/pidan1231239/pano_diffusion/reports/PanFusion--Vmlldzo3NzM1OTYy?accessToken=mmneovtrelnqd21gw5sk2cp8j0av65meohuf0ua850398sivq7duvkcvu934qlbt) for identifying issues when reproducing the results.
 
 ## Demo
 
@@ -194,7 +196,7 @@ We train the text-to-image generation model by running the following command:
 WANDB_NAME=panfusion python main.py fit --data=Matterport3D --model=PanFusion
 ```
 
-The training takes about 7 hours on 4x NVIDIA A100 GPU.
+The training takes about 7 hours on 4x NVIDIA A100 GPU. The log is available at [wandb](https://wandb.ai/pidan1231239/pano_diffusion/runs/ad8103n1?nw=nwuserpidan1231239).
 
 Assuming the `WANDB_RUN_ID` is `PANFUSION_ID`, you can test the model by running the following command:
 
