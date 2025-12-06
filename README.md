@@ -234,3 +234,6 @@ If you find our work helpful, please consider citing:
   year={2024}
 }
 ```
+
+You might also be interested in our Pan-Series works [PanSplat](https://github.com/chengzhag/PanSplat) and [PanFlow](https://github.com/chengzhag/PanFlow) towards 3D scene generation with panoramic images!
+
